@@ -16,13 +16,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         getSports()
+
         getPreviewMatches()
+
         getLiveMatches()
 
         getTickrs()
 
-
         selectMultiplier(1)
+
         binding.firstCardInRapidFireInMainActivity.setOnClickListener {
             selectMultiplier(1)
         }
@@ -81,8 +83,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun getPreviewMatches() {
         val matches = arrayListOf<PreviewMatch>(
-            PreviewMatch(R.drawable.first_match),
-            PreviewMatch(R.drawable.second_match)
+            PreviewMatch(
+                R.drawable.bar_vs_bm,
+                "BARCELONA",
+                "BAYERN MUNCHEN",
+                "02:20",
+                R.drawable.uefabg
+            ),
+            PreviewMatch(
+                R.drawable.acm_vs_fio,
+                "AC MILAN",
+                "FIORENTINA",
+                "02:10",
+                R.drawable.serie_a
+            ),
         )
         binding.previewMatchRecyclerViewInMainActivity.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         binding.previewMatchRecyclerViewInMainActivity.adapter = PreviewMatchAdapter(

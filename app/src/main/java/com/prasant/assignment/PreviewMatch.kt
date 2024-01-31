@@ -1,5 +1,9 @@
 package com.prasant.assignment
 
 data class PreviewMatch(
-    var image:Int = 0
+    var previewImage:Int = 0,
+    var homeTeam: String = "",
+    var awayTeam: String = "",
+    var previewLength: String = "",
+    var leagueLogo: Int = 0
 )
