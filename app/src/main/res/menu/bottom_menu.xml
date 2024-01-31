@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/feed"
+        android:title=""  />
+    <item
+        android:id="@+id/chains"
+        android:icon="@drawable/chains"
+        android:title="" />
+    <item
+        android:id="@+id/document"
+        android:icon="@drawable/document"
+        android:title="" />
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chat"
+        android:title="" />
+    <item
+        android:id="@+id/box"
+        android:icon="@drawable/box"
+        android:title="" />
+</menu>

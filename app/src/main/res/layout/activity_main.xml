@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -264,7 +269,7 @@
                 android:layout_height="wrap_content"
                 android:background="#12372A"
                 android:orientation="vertical"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="10dp">
 
@@ -296,12 +301,148 @@
                         android:textSize="15sp"
                         android:layout_marginLeft="5dp"/>
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:id="@+id/firstArrowInMainActivity"
+                                android:src="@drawable/polygon"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:id="@+id/secondArrowInMainActivity"
+                                android:src="@drawable/polygon"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="34dp"
+                                android:id="@+id/thirdArrowInMainActivity"
+                                android:src="@drawable/polygon"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="37dp"
+                                android:id="@+id/fourthArrowInMainActivity"
+                                android:src="@drawable/polygon"/>
+
+                        </LinearLayout>
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeWidth="0.7dp"
+                            app:strokeColor="@color/black"
+                            app:cardBackgroundColor="#1AD9D9D9">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="2dp"
+                                app:cardBackgroundColor="#4DD9D9D9"
+                                app:strokeWidth="0dp"
+                                android:id="@+id/firstCardInRapidFireInMainActivity">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1x"
+                                    android:layout_marginVertical="10dp"
+                                    android:layout_marginHorizontal="16dp"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:textColor="@color/white"/>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="0dp"
+                                app:cardBackgroundColor="#00000000"
+                                app:strokeWidth="0dp"
+                                android:id="@+id/secondCardInRapidFireInMainActivity">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2x"
+                                    android:layout_marginVertical="10dp"
+                                    android:layout_marginHorizontal="16dp"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:textColor="@color/white"/>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="0dp"
+                                app:cardBackgroundColor="#00000000"
+                                app:strokeWidth="0dp"
+                                android:id="@+id/thirdCardInRapidFireInMainActivity">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5x"
+                                    android:layout_marginVertical="10dp"
+                                    android:layout_marginHorizontal="16dp"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:textColor="@color/white"/>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardElevation="0dp"
+                                    app:cardBackgroundColor="#00000000"
+                                    app:strokeWidth="0dp"
+                                    android:id="@+id/fourthCardInRapidFireInMainActivity">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10x"
+                                        android:layout_marginVertical="10dp"
+                                        android:layout_marginHorizontal="16dp"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:textColor="@color/white"/>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
 
+                </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
                     android:gravity="center_horizontal">
 
                     <Button
@@ -374,13 +515,28 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/previewMatchRecyclerViewInMainActivity"/>
 
 
         </LinearLayout>
-
-
     </LinearLayout>
+    </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavInMainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/black"
+            android:elevation="2dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu"/>
 
 
-</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
