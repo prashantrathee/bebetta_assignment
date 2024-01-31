@@ -20,6 +20,7 @@
         android:text="USAB"
         android:textColor="@color/white"
         android:fontFamily="@font/inter_semibold"
+        android:layout_marginTop="7dp"
         app:layout_constraintTop_toBottomOf="@id/logoInTickrCard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
             Sport(
                 "Cricket",
                 R.drawable.cricket
+            ),
+            Sport(
+                "Adding Soon",
+                R.drawable.f1
             )
         )
         binding.gamesRecyclerViewInMainActivity.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)

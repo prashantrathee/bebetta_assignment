@@ -10,11 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="5dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="wrap_content"
@@ -24,7 +27,8 @@
                 android:id="@+id/cImageInHeadingLayoutInMainActivity"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
@@ -85,7 +89,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="wrap_content"
@@ -104,47 +109,53 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/football_bg"
                     android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Adding soon"
                         android:textColor="@color/white"/>
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-
 
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
-
-
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <com.google.android.material.card.MaterialCardView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/red"
                 app:strokeWidth="0dp">
 
                 <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:text="LIVE"
-                    android:textColor="@color/white"/>
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -152,110 +163,182 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Live matches"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:layout_marginStart="7dp"/>
+
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
             android:id="@+id/matchesRecyclerViewInMainActivity"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:strokeWidth="0dp"/>
-
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🔥  Most Happening Tickr"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:layout_marginBottom="15dp"/>
         </LinearLayout>
         
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:id="@+id/tickrRecyclerViewInMainActivity"
             android:orientation="horizontal"/>
 
         </LinearLayout>
-        <com.google.android.material.card.MaterialCardView
+
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </com.google.android.material.card.MaterialCardView>
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/reward_image"
+            android:layout_marginVertical="22dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rapidFireImageInMainActivity"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.005"
-                app:strokeWidth="0dp"/>
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rapidFireImageInMainActivity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.005"
+                    app:strokeWidth="0dp"/>
 
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/rapidFireImageInMainActivity"
+                    app:layout_constraintTop_toTopOf="@id/rapidFireImageInMainActivity"
+                    app:layout_constraintBottom_toBottomOf="@id/rapidFireImageInMainActivity"
+                    android:text="🔥 Rapid Fire"
+                    android:textColor="@color/white"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_bias="0.99"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="3 Questions"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/questionsTVInMainActivity"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/rapidFireImageInMainActivity"
-                app:layout_constraintTop_toTopOf="@id/rapidFireImageInMainActivity"
-                app:layout_constraintBottom_toBottomOf="@id/rapidFireImageInMainActivity"
-                android:text="🔥 Rapid Fire"
-                android:textColor="@color/white"/>
+                android:background="#12372A"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp">
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintHorizontal_bias="0.99"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:text="3 Questions"
-                android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:id="@+id/questionsTVInMainActivity"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Will Leeds lead at half-time?"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp">
 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/coin"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50 Coins"
+                        android:textColor="@color/dark_yellow"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:text="YES"
+                        android:textSize="18sp"
+                        android:backgroundTint="#166910"/>
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:text="No"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="#166910"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SKIP"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -285,7 +368,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.99"
-                    android:textColor="@color/white"/>
+                    android:textColor="#FF7300"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -295,11 +378,6 @@
 
 
         </LinearLayout>
-
-
-
-
-
 
 
     </LinearLayout>

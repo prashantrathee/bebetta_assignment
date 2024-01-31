@@ -19,6 +19,7 @@
             android:id="@+id/detailsLayoutInLiveMatchCard"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/betLayoutInLiveMatchCard">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -39,7 +40,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
                 android:textColor="@color/white"
                 android:text="Espanyol"
@@ -74,21 +75,19 @@
                 android:fontFamily="@font/inter_semibold"
                 android:textColor="#80EAEAEA"
                 android:id="@+id/vsTVINLiveMatchCard"
+                android:layout_marginTop="30dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toTopOf="@id/timeInLiveMatchCard"/>
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/timeInLiveMatchCard"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="70dp"
                 android:text="72 min"
                 android:textColor="#FFB800"
                 app:layout_constraintTop_toBottomOf="@id/vsTVINLiveMatchCard"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -115,7 +114,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
                 android:textColor="@color/white"
                 android:text="Espanyol"
